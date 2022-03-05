@@ -8,5 +8,5 @@ build:
       - pip install Django
       - pip install -r requirements.txt
 run: 
-  # command: manage.py runserver 8080
-  command: pipenv run gunicorn django_apprunner.wsgi --log-file -
+  command: python manage.py runserver 8080
+  # command: pipenv run gunicorn django_apprunner.wsgi --log-file -
