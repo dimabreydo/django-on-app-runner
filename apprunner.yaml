@@ -4,7 +4,7 @@ build:
   commands:
     build:
       - pip install pipenv
-      - pipenv install 
+      - pipenv install --python 3.8
       - pip install Django
 run: 
   command: manage.py runserver 8080
