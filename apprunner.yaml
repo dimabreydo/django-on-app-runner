@@ -18,9 +18,11 @@ build:
 #       value: "example"
 run:
   runtime-version: 3.7.7
-  command: pipenv run gunicorn django_apprunner.wsgi --log-file -
+  command: python manage.py runserver 8080
+#   command: pipenv run gunicorn django_apprunner.wsgi --log-file -
+  
   network: 
-    port: 8000
+    port: 8080
     env: MY_APP_PORT  
   env:
     - name: MY_VAR_EXAMPLE
