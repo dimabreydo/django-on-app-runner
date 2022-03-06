@@ -103,7 +103,7 @@ DATABASES = {
 
         'PASSWORD': 'postgres',
 
-        'HOST': 'apprunner-2.c3oti1qbeu1x.us-east-1.rds.amazonaws.com',
+        'HOST': 'apprunner-22.c3oti1qbeu1x.us-east-1.rds.amazonaws.com',
 
         'PORT': '5432',
 
