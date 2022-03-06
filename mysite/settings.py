@@ -96,13 +96,13 @@ DATABASES = {
 
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
 
-        'NAME': 'apprunner',
+        'NAME': 'django_db',
 
         'USER': 'postgres',
 
         'PASSWORD': 'postgres',
 
-        'HOST': 'apprunner.c3oti1qbeu1x.us-east-1.rds.amazonaws.com',
+        'HOST': 'apprunner-2.c3oti1qbeu1x.us-east-1.rds.amazonaws.com',
 
         'PORT': '5432',
 
