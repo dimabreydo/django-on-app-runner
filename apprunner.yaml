@@ -10,3 +10,6 @@ build:
 run: 
   command: python manage.py runserver 8080
   # command: pipenv run gunicorn django_apprunner.wsgi --log-file -
+network: 
+  port: 8080
+  env: MY_APP_PORT  
