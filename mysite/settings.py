@@ -80,14 +80,34 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 #         'NAME': str(BASE_DIR / 'db.sqlite3'),
 #     }
 #  }   
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'OPTIONS': {
+#             'service': 'polls_service',
+#             'passfile': '.my_pgpass',
+#         },
+#     }
+# }
+
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'OPTIONS': {
-            'service': 'polls_service',
-            'passfile': '.my_pgpass',
-        },
+
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+
+        'NAME': 'apprunner',
+
+        'USER': 'postgres',
+
+        'PASSWORD': 'postgres',
+
+        'HOST': 'apprunner.c3oti1qbeu1x.us-east-1.rds.amazonaws.com',
+
+        'PORT': '5432',
+
     }
+
 }
 
 
