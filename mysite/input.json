@@ -1,0 +1,39 @@
+{
+    "ServiceName": "django23",
+    "SourceConfiguration": {
+        "AuthenticationConfiguration": {
+            "ConnectionArn": "arn:aws:apprunner:us-east-1:453532186142:connection/aws_con/b36aee247fec45aab15be3db049c56bc"
+        },
+        "AutoDeploymentsEnabled": true,
+        "CodeRepository": {
+            "RepositoryUrl": "https://github.com/dimabreydo/django-on-app-runner",
+            "SourceCodeVersion": {
+                "Type": "BRANCH",
+                "Value": "main"
+            },
+            "CodeConfiguration": {
+                "ConfigurationSource": "REPOSITORY"
+            }
+        }
+    },
+    "InstanceConfiguration": {
+        "CPU": "1 vCPU",
+        "Memory": "3 GB"
+    },
+    
+    "HealthCheckConfiguration":{
+        "Protocol": "HTTP",
+        "Path": "",
+        "Interval": 5,
+        "Timeout": 5,
+        "HealthyThreshold": 1,
+        "UnhealthyThreshold": 5
+    },
+    "NetworkConfiguration":{
+        "EgressConfiguration": {
+            "EgressType": "VPC",
+            "VpcConnectorArn": "arn:aws:apprunner:us-east-1:453532186142:vpcconnector/apprunner-default-connector/1/1a024d8fde3346c08aa10eb7e0f728c1"
+        }
+    }
+    
+}
