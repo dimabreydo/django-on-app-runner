@@ -17,13 +17,13 @@
         }
     },
     "InstanceConfiguration": {
-        "CPU": "1 vCPU",
+        "Cpu": "1 vCPU",
         "Memory": "3 GB"
     },
     
     "HealthCheckConfiguration":{
         "Protocol": "HTTP",
-        "Path": "",
+        "Path": "/polls",
         "Interval": 5,
         "Timeout": 5,
         "HealthyThreshold": 1,
