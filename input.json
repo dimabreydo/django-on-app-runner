@@ -1,5 +1,5 @@
 {
-    "ServiceName": "django27",
+    "ServiceName": "django28",
     "SourceConfiguration": {
         "AuthenticationConfiguration": {
             "ConnectionArn": "arn:aws:apprunner:us-east-1:453532186142:connection/aws_con/b36aee247fec45aab15be3db049c56bc"
@@ -23,7 +23,7 @@
     
     "HealthCheckConfiguration":{
         "Protocol": "HTTP",
-        "Path": "polls",
+        "Path": "polls/",
         "Interval": 5,
         "Timeout": 5,
         "HealthyThreshold": 1,
