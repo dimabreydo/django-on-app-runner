@@ -53,7 +53,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'mysite.urls'
 
-CSRF_TRUSTED_ORIGINS = ['https://84bddeb8785f42769e612f16f12e3caa.vfs.cloud9.us-east-1.amazonaws.com']
+CSRF_TRUSTED_ORIGINS = ['https://jkmv2psa2c.us-east-1.awsapprunner.com']
 
 TEMPLATES = [
     {
